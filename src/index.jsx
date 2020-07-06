@@ -4,7 +4,7 @@ import ReactNestable from 'react-nestable';
 import 'react-nestable/dist/Nestable/Nestable.css';
 import './index.less';
 
-const Nestable = forwardRef((props, ref) => {
+const Nestable = (props, ref) => {
   const {
     className,
     items,
@@ -37,7 +37,7 @@ const Nestable = forwardRef((props, ref) => {
       confirmChange={confirmChange}
     />
   );
-});
+};
 
 Nestable.propTypes = {
   className: PropTypes.string,
@@ -63,4 +63,4 @@ Nestable.defaultProps = {
   renderItem: ({ item, index }) => item.toString(),
 };
 
-export default Nestable;
+export default forwardRef(Nestable);
