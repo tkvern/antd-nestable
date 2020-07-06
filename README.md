@@ -1,6 +1,11 @@
 # antd-nestable
 Drag & drop hierarchical list made as a react component for Ant Design
 
+[![npm](https://img.shields.io/npm/v/antd-nestable.svg?style=flat-square)](https://www.npmjs.com/package/antd-nestable)
+[![npm](https://img.shields.io/npm/dt/antd-nestable?style=flat-square)](https://www.npmtrends.com/antd-nestable)
+[![npm bundle size](https://img.shields.io/bundlephobia/minzip/antd-nestable?style=flat-square)](https://bundlephobia.com/result?p=antd-nestable)
+[![GitHub](https://img.shields.io/github/license/nanxiaobei/antd-nestable?style=flat-square)](https://github.com/nanxiaobei/antd-nestable/blob/master/LICENSE)
+
 ## Project resource
 https://github.com/primetwig/react-nestable
 
