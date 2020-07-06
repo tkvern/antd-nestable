@@ -1,4 +1,4 @@
-import React, { forwardRef } from 'react';
+import React, { forwardRef, useImperativeHandle } from 'react';
 import PropTypes from 'prop-types';
 import ReactNestable from 'react-nestable';
 import 'react-nestable/dist/Nestable/Nestable.css';
@@ -19,6 +19,13 @@ const Nestable = (props, ref) => {
     onChange,
     confirmChange,
   } = props;
+
+  // 对外暴露的操作
+  useImperativeHandle(ref, () => ({
+    collapse: (value) => {
+      ref.collapse(value);
+    },
+  }));
 
   return (
     <ReactNestable
