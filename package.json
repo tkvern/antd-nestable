@@ -24,6 +24,9 @@
   ],
   "author": "tkvern",
   "license": "MIT",
+  "homepage": "https://github.com/tkvern/antd-nestable",
+  "repository": "github:tkvern/antd-nestable",
+  "bugs": "https://github.com/tkvern/antd-nestable/issues",
   "peerDependencies": {
     "antd": "^4.0.0",
     "prop-types": "^15.6.2",
