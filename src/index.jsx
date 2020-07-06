@@ -1,4 +1,4 @@
-import React, { forwardRef, useImperativeHandle } from 'react';
+import React, { forwardRef } from 'react';
 import PropTypes from 'prop-types';
 import ReactNestable from 'react-nestable';
 import 'react-nestable/dist/Nestable/Nestable.css';
@@ -20,13 +20,9 @@ const Nestable = (props, ref) => {
     confirmChange,
   } = props;
 
-  let { domRef } = props;
-
-  console.log(domRef);
-
   return (
     <ReactNestable
-      ref={(el) => (domRef = el)}
+      ref={ref}
       className={className}
       items={items}
       threshold={threshold}
@@ -44,7 +40,6 @@ const Nestable = (props, ref) => {
 };
 
 Nestable.propTypes = {
-  domRef: PropTypes.any,
   className: PropTypes.string,
   items: PropTypes.array,
   threshold: PropTypes.number,

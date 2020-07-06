@@ -1,7 +1,6 @@
 import * as React from 'react';
 
 export interface NestableProps {
-  domRef?: any;
   className?: string;
   items?: { id: number; text: string }[];
   threshold?: number;
@@ -15,5 +14,5 @@ export interface NestableProps {
   onChange?: any;
   confirmChange?: any;
 }
-declare const Nestable: React.FC<NestableProps>;
+declare const Nestable: React.ForwardRefExoticComponent<React.RefAttributes<NestableProps>>;
 export default Nestable;
