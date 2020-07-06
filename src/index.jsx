@@ -20,6 +20,7 @@ const Nestable = forwardRef((props, ref) => {
 
   return (
     <ReactNestable
+      ref={ref}
       className={className}
       items={items}
       threshold={threshold}
