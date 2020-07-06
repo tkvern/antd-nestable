@@ -1,4 +1,4 @@
-import React, { forwardRef, useImperativeHandle } from 'react';
+import React, { forwardRef } from 'react';
 import PropTypes from 'prop-types';
 import ReactNestable from 'react-nestable';
 import 'react-nestable/dist/Nestable/Nestable.css';

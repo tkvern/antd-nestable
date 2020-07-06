@@ -1,6 +1,6 @@
 {
   "name": "antd-nestable",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Drag & drop hierarchical list made as a react component for Ant Design",
   "main": "dist/antd-nestable.cjs.js",
   "module": "dist/antd-nestable.esm.js",
