@@ -14,5 +14,10 @@ export interface NestableProps {
   onChange?: any;
   confirmChange?: any;
 }
-declare const Nestable: React.RefForwardingComponent<{}, NestableProps>;
+declare const Nestable: React.RefForwardingComponent<
+  {
+    collapse: () => void;
+  },
+  NestableProps
+>;
 export default Nestable;
