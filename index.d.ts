@@ -9,10 +9,10 @@ export interface NestableProps {
   group?: string | number;
   handler?: Node;
   childrenProp?: string;
-  renderItem?: function;
-  renderCollapseIcon?: function;
-  onChange?: function;
-  confirmChange?: function;
+  renderItem?: any;
+  renderCollapseIcon?: any;
+  onChange?: any;
+  confirmChange?: any;
 }
 declare const Nestable: React.FC<NestableProps>;
 export default Nestable;
