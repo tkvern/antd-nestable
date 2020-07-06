@@ -60,7 +60,7 @@ Nestable.defaultProps = {
   maxDepth: 10,
   collapsed: false,
   childrenProp: 'children',
-  renderItem: ({ item, index }) => item.toString(),
+  renderItem: ({ item }) => item.toString(),
 };
 
 export default forwardRef(Nestable);

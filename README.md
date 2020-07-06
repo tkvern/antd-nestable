@@ -2,6 +2,7 @@
 Drag & drop hierarchical list made as a react component for Ant Design
 
 [![npm](https://img.shields.io/npm/v/antd-nestable.svg?style=flat-square)](https://www.npmjs.com/package/antd-nestable)
+[![codebeat badge](https://codebeat.co/badges/a8578420-77e1-433a-bde3-efbae28c53b6)](https://codebeat.co/projects/github-com-tkvern-antd-nestable-master)
 [![npm](https://img.shields.io/npm/dt/antd-nestable?style=flat-square)](https://www.npmtrends.com/antd-nestable)
 [![npm bundle size](https://img.shields.io/bundlephobia/minzip/antd-nestable?style=flat-square)](https://bundlephobia.com/result?p=antd-nestable)
 [![GitHub](https://img.shields.io/github/license/tkvern/antd-nestable?style=flat-square)](https://github.com/tkvern/antd-nestable/blob/master/LICENSE)
