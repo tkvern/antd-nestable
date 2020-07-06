@@ -1,6 +1,7 @@
 import * as React from 'react';
 
 export interface NestableProps {
+  ref?: any;
   className?: string;
   items?: { id: number; text: string }[];
   threshold?: number;
@@ -14,10 +15,5 @@ export interface NestableProps {
   onChange?: any;
   confirmChange?: any;
 }
-declare const Nestable: React.RefForwardingComponent<
-  {
-    collapse: () => void;
-  },
-  NestableProps
->;
+declare const Nestable: React.RefForwardingComponent<NestableProps>;
 export default Nestable;

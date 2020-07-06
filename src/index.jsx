@@ -20,13 +20,6 @@ const Nestable = (props, ref) => {
     confirmChange,
   } = props;
 
-  // 对外暴露的操作
-  useImperativeHandle(ref, () => ({
-    collapse: (value) => {
-      ref.collapse(value);
-    },
-  }));
-
   return (
     <ReactNestable
       ref={(el) => (ref = el)}
