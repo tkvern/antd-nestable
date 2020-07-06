@@ -7,7 +7,7 @@ https://github.com/primetwig/react-nestable
 ## Install
 
 ```sh
-yarn add antd-img-crop
+yarn add antd-nestable
 ```
 
 ## Usage
