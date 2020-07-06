@@ -19,18 +19,14 @@ const Nestable = (props, ref) => {
     onChange,
     confirmChange,
   } = props;
-  let DomRef;
 
-  // 对外暴露的操作
-  useImperativeHandle(ref, () => ({
-    collapse: (value) => {
-      DomRef.collapse(value);
-    },
-  }));
+  let { domRef } = props;
+
+  console.log(domRef);
 
   return (
     <ReactNestable
-      ref={(el) => (DomRef = el)}
+      ref={(el) => (domRef = el)}
       className={className}
       items={items}
       threshold={threshold}
@@ -48,6 +44,7 @@ const Nestable = (props, ref) => {
 };
 
 Nestable.propTypes = {
+  domRef: PropTypes.any,
   className: PropTypes.string,
   items: PropTypes.array,
   threshold: PropTypes.number,

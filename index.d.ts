@@ -1,10 +1,7 @@
 import * as React from 'react';
 
-interface HandleProps {
-  collapse: () => void;
-}
-
 export interface NestableProps {
+  domRef?: any;
   className?: string;
   items?: { id: number; text: string }[];
   threshold?: number;
@@ -18,5 +15,5 @@ export interface NestableProps {
   onChange?: any;
   confirmChange?: any;
 }
-declare const Nestable: React.RefForwardingComponent<HandleProps, NestableProps>;
+declare const Nestable: React.FC<NestableProps>;
 export default Nestable;
