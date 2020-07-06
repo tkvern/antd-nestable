@@ -1,0 +1,59 @@
+{
+  "name": "antd-nestable",
+  "version": "1.0.0",
+  "description": "Drag & drop hierarchical list made as a react component for Ant Design",
+  "main": "dist/antd-nestable.cjs.js",
+  "module": "dist/antd-nestable.esm.js",
+  "types": "index.d.ts",
+  "files": [
+    "dist",
+    "src",
+    "index.d.ts"
+  ],
+  "scripts": {
+    "build": "rimraf dist && rollup -c"
+  },
+  "keywords": [
+    "react",
+    "ant-design",
+    "nestable",
+    "react-nestable",
+    "dragndrop",
+    "draggable",
+    "sortable"
+  ],
+  "author": "tkvern",
+  "license": "MIT",
+  "peerDependencies": {
+    "antd": "^4.0.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.10.4",
+    "react-nestable": "^1.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/plugin-transform-runtime": "^7.10.1",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.1",
+    "@rollup/plugin-replace": "^2.3.3",
+    "@types/react": "^16.9.38",
+    "antd": "^4.3.4",
+    "eslint": "^7.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react-app": "^6.2.2",
+    "prettier": "^2.0.5",
+    "rollup": "^2.17.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-less": "^1.1.2",
+    "typescript": "^3.9.5"
+  },
+  "eslintIgnore": [
+    "dist",
+    "index.d.ts"
+  ]
+}
