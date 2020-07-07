@@ -1,9 +1,5 @@
 import * as React from 'react';
 
-interface HandleProps {
-  collapse: () => void;
-}
-
 export interface NestableProps {
   className?: string;
   items?: { id: number; text: string }[];
@@ -18,8 +14,5 @@ export interface NestableProps {
   onChange?: any;
   confirmChange?: any;
 }
-declare const Nestable: React.RefForwardingComponent<
-  HandleProps,
-  NestableProps
->;
+declare const Nestable: React.RefForwardingComponent<NestableProps, MutableRefObject<HTMLElement | undefined>>;
 export default Nestable;
