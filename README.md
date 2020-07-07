@@ -63,6 +63,42 @@ const Demo = () => (
 |--------|---------|-------------|
 | collapse | string or array | `"NONE"` - expand all groups; `"ALL"` - collapse all groups; `[]` - collapse all groups with ids from given array |
 
+## useRef
+You can use ref control the component.
+
+Example:
+```javascript
+
+const nestableRef = useRef<{ collapse: (type: string | number[]) => void }>();
+const collapse = (collapseCase: number) => {
+  if (nestableRef.current) {
+    switch (collapseCase) {
+      case 0:
+        nestableRef.current?.collapse('NONE');
+        break;
+      case 1:
+        nestableRef.current?.collapse('ALL');
+        break;
+      case 2:
+        nestableRef.current?.collapse([1]);
+        break;
+      default:
+    }
+  }
+};
+// Other Code
+return (
+  <Nestable
+    ref={nestableRef}
+    items={items}
+    renderItem={renderItem}
+    onChange={(value: []) => {
+      console.log(value);
+    }}
+  />
+)
+
+```
 
 ## Styles
 
