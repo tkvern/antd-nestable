@@ -20,7 +20,6 @@ yarn add antd-nestable
 
 ```jsx harmony
 import Nestable from 'antd-nestable';
-import { Upload } from 'antd';
 
 const items = [
   { id: 0, text: 'Andy' },
