@@ -57,6 +57,13 @@ const Demo = () => (
 | onChange | function | `() => {}` | Callback which has two parameters: `items` - new array after position was changed, `item` - item which has been moved. |
 | confirmChange | function | `() => true` | Callback which has two parameters: `dragItem` - item which is being dragged, `destinationParent` - item where dragItem is about to land. Let function return false if this movement should not happen. |
 
+## Public methods
+
+| Method | Accepts | Description |
+|--------|---------|-------------|
+| collapse | string or array | `"NONE"` - expand all groups; `"ALL"` - collapse all groups; `[]` - collapse all groups with ids from given array |
+
+
 ## Styles
 
 To prevent overwriting the custom styles to `antd`, `antd-nestable` does not import the style files of components.
