@@ -22,7 +22,7 @@
     "draggable",
     "sortable"
   ],
-  "author": "tkvern",
+  "author": "tkvern <verncake@gmail.com> (https://github.com/tkvern)",
   "license": "MIT",
   "homepage": "https://github.com/tkvern/antd-nestable",
   "repository": "github:tkvern/antd-nestable",
